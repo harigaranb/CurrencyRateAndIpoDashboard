@@ -8,7 +8,7 @@ import SignupScreen from "./components/SignupScreen";
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import DashboardScreen from "./components/DashboardScreen";
-import Top20StackScreen from "./components/Top20StackScreen";
+import ExchangeRates from "./components/ExchangeRates";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -31,7 +31,7 @@ const DashboardTabNavigator = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen name="UpcomingIPO" component={DashboardScreen} />
-      <Tab.Screen name="ExchangeRates" component={Top20StackScreen} />
+      <Tab.Screen name="ExchangeRates" component={ExchangeRates} />
     </Tab.Navigator>
   );
 };
