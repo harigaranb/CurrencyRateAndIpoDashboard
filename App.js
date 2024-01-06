@@ -1,20 +1,39 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { Provider } from "react-redux";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import store from "./redux/store";
+import LoginScreen from "./components/LoginScreen";
+import SignupScreen from "./components/SignupScreen";
 
-export default function App() {
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import DashboardScreen from "./components/DashboardScreen";
+import Top20StackScreen from "./components/Top20StackScreen";
+
+const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Login">
+          <Stack.Screen name="Login" component={LoginScreen} />
+          <Stack.Screen name="Signup" component={SignupScreen} />
+          <Stack.Screen name="Dashboard" component={DashboardTabNavigator} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const DashboardTabNavigator = () => {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="UpcomingIPO" component={DashboardScreen} />
+      <Tab.Screen name="ExchangeRates" component={Top20StackScreen} />
+    </Tab.Navigator>
+  );
+};
+
+export default App;
