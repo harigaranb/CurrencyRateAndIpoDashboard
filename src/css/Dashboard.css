@@ -1,0 +1,38 @@
+.dashboard-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  margin-bottom: 20px;
+}
+
+.dashboard-logout-button {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.dashboard-navigation {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.dashboard-navigation a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  background-color: #008CBA; 
+  transition: background-color 0.3s ease; 
+
+}
+
+.dashboard-navigation a:hover {
+  background-color: #005580; 
+}
