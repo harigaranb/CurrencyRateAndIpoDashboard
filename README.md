@@ -22,6 +22,7 @@ This project aims to create a responsive mobile application providing users with
     ```
    cd CurrencyRateAndIpoDashboard
     ```
+    - To Use React Native Project
     ```
    git checkout ReactNative
     ```
