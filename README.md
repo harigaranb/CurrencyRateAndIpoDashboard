@@ -19,10 +19,10 @@ This project aims to create a responsive web application providing users with in
    ```bash
    git clone https://github.com/harigaranb/CurrencyRateAndIpoDashboard.git
     ```
-    - To Use React Project
     ```
    cd CurrencyRateAndIpoDashboard
     ```
+    - To Use React Project
     ```
    git checkout React
     ```
