@@ -21,10 +21,10 @@ This project aims to create a responsive web application providing users with in
     ```
     - To Use React Project
     ```
-    git checkout React
-    ```
-    ```
    cd CurrencyRateAndIpoDashboard
+    ```
+    ```
+   git checkout React
     ```
 
 2. **Install Dependencies**
