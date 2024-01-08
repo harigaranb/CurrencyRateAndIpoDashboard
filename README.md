@@ -18,7 +18,12 @@ This project aims to create a responsive mobile application providing users with
 
    ```bash
    git clone https://github.com/harigaranb/CurrencyRateAndIpoDashboard.git
+    ```
+    ```
    cd CurrencyRateAndIpoDashboard
+    ```
+    ```
+   git checkout ReactNative
     ```
 2. **Install Dependencies**
 
